@@ -12,17 +12,19 @@
     color: #000051;
 }
 .img__search{
-    margin-right: 0.1rem;
+    margin-right: 0.5rem;
 }
 .search{
-    height: 2rem;
+    padding: 1rem 2rem;
     outline: none;
     font-size: 1rem;
     color: #000051;
-    border: 1px solid #000051;
+    border: none;
+    border-radius: 5rem;
+    margin-top: 0;
 }
 
 .search:hover{
-    box-shadow: 5px 5px 5px 5px #000051;
+    box-shadow: 5px 5px 5px 5px #e0f2f1;
     transition: 2s;
 }

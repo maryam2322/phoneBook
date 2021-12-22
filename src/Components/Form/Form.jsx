@@ -1,10 +1,11 @@
-import React from 'react'
 import './Form.style.css'
+import {useState} from "react";
 const makeUniqueID = () => {
     return parseInt(100000 * Math.random())
 }
 
 const Form = ({users , setUsers , user , setUser}) => {
+
     const handleAdd = (e) => {
         e.preventDefault()
         if (user.id) {
@@ -12,7 +13,7 @@ const Form = ({users , setUsers , user , setUser}) => {
         } else {
             setUsers([...users, { id: makeUniqueID(), ...user }])
         }
-        setUser({ firstName: '', lastName: '', job: '' })
+        setUser({ firstName: '', lastName: '',email:'', phone: '' })
     }
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -20,20 +21,25 @@ const Form = ({users , setUsers , user , setUser}) => {
     }
     return (
         <div>
-            <form onSubmit={handleAdd}>
+            <form onSubmit={handleAdd} className={'formInput'}>
                 <div>
-                    <label htmlFor="input1">First Name:</label>
-                    <input onChange={handleChange} id={"input1"} type="text" name={'firstName'} value={user.firstName} />
+                    <label htmlFor="input1" className={'label'}>First Name:</label>
+                    <input className={'inputContact'} onChange={handleChange} id={"input1"} type="text" name={'firstName'} value={user.firstName} required={'Enter input'}/>
                 </div>
                 <div>
-                    <label htmlFor="input2">Last Name:</label>
-                    <input onChange={handleChange} id={"input2"} type="text" name={'lastName'} value={user.lastName} />
+                    <label htmlFor="input2" className={'label'}>Last Name:</label>
+                    <input className={'inputContact'} onChange={handleChange} id={"input2"} type="text" name={'lastName'} value={user.lastName} required={'Enter input'}/>
                 </div>
                 <div>
-                    <label htmlFor="input3">Job Title:</label>
-                    <input onChange={handleChange} id={"input3"} type="text" name={'job'} value={user.job} />
+                    <label htmlFor="input3" className={'label'}>Email:</label>
+                    <input className={'inputContact'} onChange={handleChange} id={"input3"} type="text" name={'email'} value={user.email} required={'Enter input'} />
                 </div>
-                <input type="submit"  />
+                <div>
+                    <label htmlFor="input4" className={'label'}>Phone Number:</label>
+                    <input className={'inputContact'} onChange={handleChange} id={"input4"} type="text" name={'phone'} value={user.phone} required={'Enter input'}/>
+                </div>
+
+                <input className={'submit'} type="submit" value={'Add'} />
             </form>
         </div>
     )

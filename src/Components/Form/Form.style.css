@@ -1,0 +1,33 @@
+.formInput{
+    padding: 1rem;
+}
+
+.formInput div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.label{
+    color: #000051;
+    font-weight: bold;
+}
+
+.inputContact{
+    padding: 1rem;
+    outline: none;
+    color: #000051;
+}
+.submit{
+    padding: 0.8rem 2rem;
+    color: #000051;
+    font-weight: bold;
+    background: #b2dfdb;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}

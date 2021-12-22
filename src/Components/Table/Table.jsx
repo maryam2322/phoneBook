@@ -1,10 +1,14 @@
 import './Table.style.css'
 import Button from '../Button/Button'
+import {useState} from "react";
+
 
 export const Table = ({users, setUsers, setUser}) => {
+
     const handleDelete = (id) => {
         setUsers(users.filter(user => user.id !== id))
     }
+
     return (
         <div className={'body'}>
             <img src="https://img.icons8.com/plasticine/60/000000/address-book--v1.png"/>
@@ -39,11 +43,6 @@ export const Table = ({users, setUsers, setUser}) => {
                 </tbody>
             </table>
 
-            <div className={'add'}>
-                <img className={'add__img'} src="https://img.icons8.com/fluency/70/000000/add-phone.png"/>
-            </div>
-
         </div>
-
     )
 }

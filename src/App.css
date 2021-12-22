@@ -1,3 +1,31 @@
-.body{
+.phonebook{
     font-family: 'Chakra Petch', sans-serif;
+    /*border: 1px solid #000051;*/
+    /*margin: 2rem;*/
+}
+
+.add {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+    margin: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.add__img {
+    background: #e0f2f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addForm{
+    background: #e0f2f1;
+    border: 1px solid #000051;
+    position: fixed;
+    top: 3rem;
+    right: 40%;
+    width: 25rem;
+    height: 65%;
+    transition: 1.5s;
 }
