@@ -10,13 +10,17 @@ export const Table = ({users, setUsers, setUser}) => {
             <img src="https://img.icons8.com/plasticine/60/000000/address-book--v1.png"/>
             <table className={'table'}>
                 <tbody>
+
                 {users.map(item => (
                     <tr key={item.id} className={'row'}>
                         <div className={'contact'}>
                             <img className={'contact__img'} src={'https://joeschmoe.io/api/v1/' + item.firstName}
                                  alt=""/>
-                            <h3 className={'contact__name'}>{item.firstName} {item.lastName}</h3>
-                            <h6>{item.phone}</h6>
+                            <div className={'details'}>
+                                <h3 className={'contact__name'}>{item.firstName} {item.lastName}</h3>
+                                <h5>{item.email}</h5>
+                                <h6>{item.phone}</h6>
+                            </div>
                         </div>
                         <div>
                             <Button onClick={() => {
