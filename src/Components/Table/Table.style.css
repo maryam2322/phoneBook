@@ -1,0 +1,45 @@
+.body{
+    margin: 2rem;
+}
+.table{
+    width: 90%;
+    margin-top: 1rem;
+}
+.table tbody{
+    width: 80%;
+}
+
+.row{
+    background: #e1f5fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0039cb;
+    padding: 1rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.contact__img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.contact__name{
+    margin: 2rem 1rem;
+}
+
+.add{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+.add__img{
+    background: #e0f2f1;
+    border-radius: 50%;
+
+}

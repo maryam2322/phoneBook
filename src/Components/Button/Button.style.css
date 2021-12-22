@@ -1,0 +1,9 @@
+.CustomButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.CustomButton:hover{
+    transform: translateX(2px);
+}
