@@ -3,8 +3,9 @@
     border: 1px solid #000051;
     margin: 2rem;
 }
-@media screen and (max-width: 425px){
-    .phonebook{
+
+@media screen and (max-width: 425px) {
+    .phonebook {
         margin: 0;
     }
 }
