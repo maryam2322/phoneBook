@@ -1,11 +1,11 @@
 import './Form.style.css'
+import {useState, useEffect, useRef} from "react";
 
 const makeUniqueID = () => {
     return parseInt(100000 * Math.random())
 }
 
 const Form = ({users, setUsers, user, setUser}) => {
-
     const handleAdd = (e) => {
         e.preventDefault()
         if (user.id) {
@@ -17,8 +17,8 @@ const Form = ({users, setUsers, user, setUser}) => {
         setUser({firstName: '', lastName: '', email: '', phone: ''})
     }
     const handleChange = (e) => {
-        const {name, value} = e.target
-        setUser({...user, [name]: value})
+            const {name, value} = e.target
+            setUser({...user, [name]: value})
     }
     return (
 

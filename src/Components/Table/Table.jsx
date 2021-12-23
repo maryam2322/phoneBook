@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 import Form from "../Form/Form";
 
 
-export const Table = ({users, setUsers, user, setUser, filter, setFilter}) => {
+export const Table = ({users, setUsers, user, setUser, filter}) => {
     const [showEditForm, setShowEditForm] = useState(false)
 
     const handleDelete = (id) => {
