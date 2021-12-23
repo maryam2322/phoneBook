@@ -1,24 +1,25 @@
-.formInput{
+.formInput {
     padding: 1rem;
 }
 
-.formInput div{
+.formInput div {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.label{
+.label {
     color: #000051;
     font-weight: bold;
 }
 
-.inputContact{
+.inputContact {
     padding: 1rem;
     outline: none;
     color: #000051;
 }
-.submit{
+
+.submit {
     padding: 0.8rem 2rem;
     color: #000051;
     font-weight: bold;
@@ -27,7 +28,20 @@
     cursor: pointer;
 }
 
-.submit:hover{
-    transform: scale(1.2);
+.submit:hover {
+    transform: scale(1);
     transition: 1s;
+}
+
+@media screen and (max-width: 425px){
+    .label{
+        font-size: 0.8rem;
+    }
+    .inputContact{
+        padding: 0.4rem;
+    }
+    .submit{
+        padding: 0.4rem 1rem;
+    }
+
 }

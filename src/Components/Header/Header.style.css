@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 10rem;
     display: flex;
     justify-content: space-between;
@@ -7,14 +7,22 @@
     background: #b2dfdb;
     border-bottom: 1px solid #0039cb;
 }
-.title{
+
+.title {
     margin: 0;
     color: #000051;
 }
-.img__search{
-    margin-right: 0.5rem;
-}
+
 .search{
+    display: flex;
+    flex-direction: column;
+}
+
+.search__img {
+    margin-right: 0.4rem;
+}
+
+.search__input {
     padding: 1rem 2rem;
     outline: none;
     font-size: 1rem;
@@ -24,7 +32,21 @@
     margin-top: 0;
 }
 
-.search:hover{
+.search:hover {
     box-shadow: 5px 5px 5px 5px #e0f2f1;
     transition: 2s;
+}
+
+@media screen and (max-width: 425px){
+    .header{
+        padding: 0 1rem;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+    .search__input{
+        padding: 0.8rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
 }

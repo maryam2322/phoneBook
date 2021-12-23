@@ -1,0 +1,42 @@
+.add {
+    position: fixed;
+    bottom: 0;
+    right: 0.9rem;
+    display: flex;
+    justify-content: right;
+    margin: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.add__img {
+    background: #e0f2f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addForm {
+    background: #e0f2f1;
+    border: 1px solid #000051;
+    position: fixed;
+    top: 3rem;
+    right: 40%;
+    width: 25rem;
+    height: 30rem;
+    transition: 1.5s;
+}
+
+@media screen and (max-width: 425px) {
+    .addForm {
+        top: 0;
+        right: 0;
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .add__img {
+        background: #fff;
+        width: 3rem;
+        height: 3rem;
+    }
+
+}
